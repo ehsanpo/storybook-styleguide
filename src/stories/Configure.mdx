@@ -1,0 +1,160 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from '@storybook/blocks';
+import { tokens } from '../shared/styles';
+
+export const SampleText =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+<Meta title='Design Tokens' />
+
+<div>
+  <ColorPalette>
+    ## Colors
+
+    <ColorItem title='Primary' colors={[tokens.colors.primary[500]]} />
+    <ColorItem title='Primary Shades' colors={tokens.colors.primary} />
+
+    <ColorItem title='Secondary' colors={[tokens.colors.secondary[500]]} />
+    <ColorItem title='Secondary Shades' colors={tokens.colors.secondary} />
+
+    <ColorItem title='Tertiary' colors={[tokens.colors.tertiary[500]]} />
+    <ColorItem title='Tertiary Shades' colors={tokens.colors.tertiary} />
+
+    <ColorItem title='Quaternary' colors={[tokens.colors.quaternary[500]]} />
+    <ColorItem title='Quaternary Shades' colors={tokens.colors.quaternary} />
+
+    <ColorItem title='Background' colors={tokens.colors.bg} />
+    <ColorItem title='CTA' colors={tokens.colors.cta} />
+
+    <ColorItem title='Gradients' colors={tokens.gradients} colorType={'image'} />
+
+    <ColorItem title='Sucsess' colors={tokens.colors.sucsess} />
+    <ColorItem title='Danger' colors={tokens.colors.danger} />
+    <ColorItem title='Warning' colors={tokens.colors.warning} />
+    <ColorItem title='Info' colors={tokens.colors.info} />
+
+  </ColorPalette>
+
+## Typography
+
+<div>
+### Body Font
+
+**Font:** {tokens.typography.type.body}
+
+**Weights:** 400(regular), 700(bold)
+
+  <Typeset
+    fontSizes={[
+      '0.875rem',
+      '1rem',
+      '1.25rem',
+    ]}
+    fontWeight={tokens.typography.weight.black}
+    sampleText={SampleText}
+    fontFamily={tokens.typography.type.body}
+  />
+</div>
+
+<div>
+### Headline Font
+
+**Font:** {tokens.typography.type.headline}
+
+**Weights:** 400(regular), 600(bold)
+
+  <Typeset
+    fontSizes={[
+      '0.875rem',
+      '1rem',
+      '1.25rem',
+      '1.5rem',
+      '2rem',
+      '2.5rem',
+      '3rem',
+      '4rem',
+    ]}
+    fontWeight={tokens.typography.weight.black}
+    sampleText={SampleText}
+    fontFamily={tokens.typography.type.headline}
+  />
+</div>
+
+## Spacing
+
+ <table>
+      <thead>
+        <tr>
+          <th className="font-family-heading text-left pr-16">Token name</th>
+          <th className="font-family-heading text-left pr-16">Token value</th>
+          <th className="font-family-heading text-left">Visual example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>s0</td>
+          <td>{tokens.spacing.s0}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s0 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>shalf</td>
+          <td>{tokens.spacing.shalf}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.shalf }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s1</td>
+          <td>{tokens.spacing.s1}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s1 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s2</td>
+          <td>{tokens.spacing.s2}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s2 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s3</td>
+          <td>{tokens.spacing.s3}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s3 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s4</td>
+          <td>{tokens.spacing.s4}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s4 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s5</td>
+          <td>{tokens.spacing.s5}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s5 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s6</td>
+          <td>{tokens.spacing.s6}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s6 }}></div>
+          </td>
+        </tr>
+        <tr>
+          <td>s7</td>
+          <td>{tokens.spacing.s7}</td>
+          <td>
+            <div style={{ background: tokens.colors.primary[500],  height:  16, width: tokens.spacing.s7 }}></div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+</div>
