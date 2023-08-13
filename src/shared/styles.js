@@ -23,10 +23,10 @@ const secondary = '#41bf50';
 const tertiary = '#f59740';
 const quaternary = '#69f8ff';
 
-const sucsess = '#28a745';
-const danger = '#dc3545';
-const warning = '#FFF5CF';
-const info = '#0040b0';
+const sucsess = '#19B53D';
+const danger = '#D32B26';
+const warning = '#C99002';
+const info = '#007FCE';
 
 const shades = tailwindcssPaletteGenerator({
   colors: [

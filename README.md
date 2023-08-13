@@ -1,10 +1,24 @@
 
 <h1 align="center">
-  Style Guide boilerplate fot Storybook and Chromatic's Design Systems for Developers.
+  Design Systems boilerplate build with Storybook and Chromatic.
 </h1>
 
 This is an starter for making an Design system using Design tokens.
 This template ships with the main React configuration files you'll need to get up and running fast.
+
+## What I want to achieve :
+ 
+- Type safe variable for css
+- Apreview of all Tokens
+- Using Design Tokens
+- Having multi Theme (Dark/light)
+- A few starter components
+  - Button
+  - Card
+  - Links
+  - Badge
+- HTML Starter for pages and sections
+
 
 ## 🔎 What's inside?
 

@@ -5,12 +5,6 @@ import { Icon } from '../Icon';
 import { Link } from './Link';
 import { StoryLinkWrapper } from '../LinkWrapper';
 
-const CustomLink = styled(Link)`
-  && {
-    color: red;
-  }
-`;
-
 const onLinkClick = action('onLinkClick');
 
 export default {
@@ -69,16 +63,9 @@ export const ALL = {
         LinkWrapper={StoryLinkWrapper}
         href='http://storybook.js.org'
       >
-        has a LinkWrapper like GatsbyLink or NextLink
+        has a LinkWrapper like GatsbyLink or NextLink tertiary
       </Link>
       <br />
-      <CustomLink
-        tertiary
-        LinkWrapper={StoryLinkWrapper}
-        href='http://storybook.js.org'
-      >
-        has a LinkWrapper like GatsbyLink or NextLink with custom styling
-      </CustomLink>
     </div>
   ),
 };
